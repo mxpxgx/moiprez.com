@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+        <div class="profile">
+        <p class="interests text-center">Experienced professional interested in ubiquitous computing, data analysis, algorithms and software engineering.</p>
+        <img class="th" src="static/img/profile.jpg">         
+                <ul class="vcard">
+                  <li class="fn">Moisés Pérez</li>
+                  <li class="title">Software Engineer, MSc.</li>
+                  <li class="locality">Tijuana &amp; San Diego Area</li>
+                  <li class="email"><i class="fa fa-envelope"></i> <a href="mailto:mxpxgx@gmail.com">mxpxgx@gmail.com</a></li>
+                  <!-- <li class="resume"><a href="static/docs/MoisesPerez_resume.pdf">Resumé</a></li> -->
+                </ul>
+        </div>
+
+        <div class="sub-nav-container"  data-magellan-expedition="fixed">
+          <dl class="sub-nav">
+            <dd data-magellan-arrival="projects"><a href="#projects">Projects</a></dd>
+            <dd data-magellan-arrival="publications"><a href="#publications">Publications</a></dd>
+            <dd><a href="static/docs/MoisesPerez_resume.pdf">Resumé</a></dd>
+          </dl>
+        </div>
+
+        <div id="content">
+
+        <div id="projects">
+            <a name="projects"></a>
+            <h2 data-magellan-destination="projects">Projects</h2>
+            <p>These are some of the projects I've worked on in the past.</p>
+            <dl>
+                <dt>ESNM [@<a href="http://esnm.colef.mx">colef.mx</a>]</dt>
+                <dd>
+                    <p>Developed a web system with applications related to population and migration studies as part of a research project (<a href="http://www.inegi.org.mx/inegi/conacyt/">No. 16506</a>) funded by CONACYT and INEGI (institutes of the federal government). Helped in the design and implemention of an algorithm to estimate population and net migration between Mexican states using data from the national census, and administrative registries for births and deaths.</p>
+                    <ul class="clearing-thumbs" data-clearing>
+                        <li><a class="thumbnail" href="static/img/esnm/flujos.png"><img data-caption="Migration Flows" src="static/img/esnm/flujos-th.png"></a></li>
+                        <li><a class="thumbnail" href="static/img/esnm/snm.png"><img data-caption="Net Migration Chart" src="static/img/esnm/snm-th.png"></a></li>
+                    </ul>
+                </dd>
+
+                <dt>InCense [<a href="https://github.com/mxpxgx/InCense">github</a>]</dt>
+                <dd>
+                    <p>My master’s project at CICESE, InCense, a toolkit to facilitate contextual data gathering from a population of smartphone users. It includes a <a href="https://github.com/mxpxgx/InCense">mobile application</a>, a <a href="https://github.com/mxpxgx/InCense-Designer">desktop application</a> and a database. The mobile application was developed using the Android platform. This application stays running the programmed time, sensing and saving data from the accelerometers, GPS, microphone, Wi-Fi, NFC and other “sensors”. It also triggers surveys to users based on different events. If you want to know more about this project you can read some of my publications about it or contact me.</p>
+                    <ul class="clearing-thumbs" data-clearing>
+                        <li><a class="thumbnail" href="static/img/incense/poster.png"><img data-caption="Workshop Poster" src="static/img/incense/poster-th.png"></a></li>
+                        <li><a class="thumbnail" href="static/img/incense/casestudy-nfc.png"><img data-caption="NFC Usage" src="static/img/incense/casestudy-nfc-th.png"></a></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+
+        <div id="publications">
+            <a name="publications"></a>
+            <h2 data-magellan-destination="publications">Publications and other academic activities</h2>
+            <p>These are some of my academic publications and research-related activities.</p>
+            <ul>
+                <li>M. Perez, L. Castro, J. Favela (2011). InCense: A research kit to facilitate behavioral data gathering from populations of mobile phone users. 5th International Symposium on Ubiquitous Computing and Ambient Intelligence (UCAmI). Riviera Maya, Mexico. [<a href="http://www.esi.uclm.es/www/Jesus.Fontecha/web/index.php/events/ucami-iwaal">UCAmI site</a>]</li>
+                <li>L. Castro, J. Favela, M. Perez, C. Garcia (2011). Work in progress: Opportunistic sensing for behavioral inferences in elder care. IEEE Pervasive Computing. 10(4): 54-55. [<a href="http://www.computer.org/csdl/mags/pc/2011/04/mpc2011040054-abs.html">Abstract</a>]</li>
+                <li><p>M. Perez (2011). InCense: A research kit to facilitate behavioral data gathering from populations of mobile phone users (Poster). 2nd Workshop on Ubiquitous Computing Uniting the Californias. Ensenada, Mexico. [<a href="http://www.ics.uci.edu/~svoida/wuc2011/2011_Workshop_on_Ubiquitous_Computing_Uniting_the_Californias_%28WUC%29/Home.html">WUC2nd site</a>, <a href="static/img/incense/poster.png">PNG file</a>]</p>
+                </li>
+                <li>Thesis (Spanish only): M. Perez (2012). Herramienta móvil de adquisición de información del comportamiento en poblaciones. Tesis de maestría en ciencias. Centro de Investigación Científica y de Educación Superior de Ensenada. 2012. [<a href="http://biblioteca.cicese.mx/catalogo/tesis/ficha.php?id=18857">CICESE library</a>]</li>
+            </ul>
+        </div>
+
+        </div>
+
+{% endblock %}
+
+{% block js_bottom %}
+
+        <script src="static/js/vendor/foundation.min.js"></script>
+        <script src="static/js/vendor/foundation/foundation.topbar.js"></script>
+        <script src="static/js/vendor/foundation/foundation.clearing.js"></script>
+        <script src="static/js/main.js"></script>
+        
+{% endblock %}

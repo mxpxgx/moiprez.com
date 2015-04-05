@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}{{ parent() }} - Home{% endblock %}
+
+{% block css %}
+
+<link rel="stylesheet" href="{{base_url}}static/css/jquery.tumblr-reader.css">
+
+{% endblock %}
+
+{% block header %}{{ parent() }}{% endblock %}
+
+{% block content %}
+
+<div id="profile">
+    <h2>Blog</h2>
+    <p class="important">
+        Blog de Moisés.
+    </p>
+</div>
+
+<div id="tumblr_moiprez">
+</div>
+
+{% block js_bottom %}
+{{ parent() }}
+<script src="{{base_url}}static/js/vendor/jquery.tumblr-reader.js"></script>
+<script type="text/javascript">
+$(function(){ $("#tumblr_moiprez").tumblrReader({'blog': 'moiprez','count': 10,'tagged': ''}); });
+</script>
+{# <script type='text/javascript' src='http://moiprez.tumblr.com/js'></script> #}
+{% endblock %}
+
+{% endblock %}
