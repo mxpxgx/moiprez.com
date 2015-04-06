@@ -2,9 +2,7 @@
 __pycache__
 *.sqlite3
 *.pdf
-moiprezsite/settings/
-moiprezsite/config.json
-
-moiprezsite/settings/production.py
-
-moiprezsite/settings/base.py
+moiprezsite/settings/*.py
+!moiprezsite/settings/__init__.py
+!moiprezsite/settings/base.py
+config.json
